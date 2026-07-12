@@ -278,6 +278,24 @@ button {
   margin-bottom: 28px;
 }
 
+.wave-emoji {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: wave 2.4s ease-in-out infinite;
+  animation-delay: 0.6s;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  8% { transform: rotate(18deg); }
+  16% { transform: rotate(-10deg); }
+  24% { transform: rotate(18deg); }
+  32% { transform: rotate(-6deg); }
+  40% { transform: rotate(12deg); }
+  48% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
 .hero-subtitle {
   max-width: 52ch;
   color: var(--text-secondary);
