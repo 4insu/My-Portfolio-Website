@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supriyo Ain — Software Engineer</title>
+  <meta name="description" content="Portfolio of Alex Rivera, software engineer specializing in backend systems and developer tooling.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a href="#hero" class="logo" aria-label="Home">
+        <span class="logo-bracket">&lt;</span>ain.supriyo<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link"><span class="nav-index">01.</span>About</a></li>
+          <li><a href="#projects" class="nav-link"><span class="nav-index">02.</span>Projects</a></li>
+          <li><a href="#contact" class="nav-link"><span class="nav-index">03.</span>Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO / INTRO ===== -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <p class="hero-eyebrow">$ whoami</p>
+        <h1 class="hero-title">
+          Hi I'm<br>
+          <span class="accent-gold">Supriyo Ain! 👋</span><br>
+        </h1>
+        <p class="hero-subtitle">
+          Backend engineer &amp; toolmaker focused on reliability,
+          developer experience, and quietly boring infrastructure.
+        </p>
+        <div class="hero-actions">
+          <a href="https://drive.google.com/uc?export=download&id=1CWSvfZmkHWzxpn532v6I09FrVq5-jv-V" class="btn btn-primary" id="resume-btn" target="_blank" rel="noopener noreferrer" download="Supriyo_Ain_Resume.pdf">Resume</a>
+          <a href="#projects" class="btn btn-outline">View Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title"><span class="section-index">01.</span> About</h2>
+
+        <div class="about-grid">
+          <div class="about-bio">
+            <p>
+              I'm a software engineer with seven years of experience designing
+              backend systems that hold up under real traffic. I care about
+              the unglamorous parts of engineering — clear error messages,
+              graceful degradation, and code a teammate can read at 2am
+              without cursing my name.
+            </p>
+            <p>
+              Most of my recent work lives at the intersection of
+              <span class="accent-red">distributed systems</span> and
+              <span class="accent-gold">developer tooling</span> — building the
+              internal platforms that let other engineers ship faster and
+              sleep better.
+            </p>
+            <p>
+              Outside of work, I contribute to a couple of open-source CLI
+              tools, write occasionally about systems design, and am slowly
+              losing a war against my terminal dotfiles.
+            </p>
+          </div>
+
+          <aside class="about-highlights" aria-label="Highlights">
+            <ul class="highlight-list">
+              <li class="highlight-item">
+                <span class="highlight-label">Focus</span>
+                <span class="highlight-value">Machine Learning</span>
+              </li>
+              <li class="highlight-item">
+                <span class="highlight-label">Experience</span>
+                <span class="highlight-value">Currently Pursuing M.Tech</span>
+              </li>
+              <li class="highlight-item">
+                <span class="highlight-label">Stack</span>
+                <span class="highlight-value">Python · C++ · Java</span>
+              </li>
+              <li class="highlight-item">
+                <span class="highlight-label">Based in</span>
+                <span class="highlight-value">India</span>
+              </li>
+              <li class="highlight-item">
+                <span class="highlight-label">Status</span>
+                <span class="highlight-value"><span class="status-dot"></span>Open to work</span>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title"><span class="section-index">02.</span> Projects</h2>
+
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-card-top">
+              <span class="project-icon" aria-hidden="true">▹</span>
+              <div class="project-links">
+                <a href="#" class="project-icon-link" aria-label="View source on GitHub">
+                  <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.01-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.19 1.78 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.17 0 1.56-.02 2.82-.02 3.2 0 .31.21.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+                </a>
+                <a href="#" class="project-icon-link" aria-label="View live project">
+                  <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h6v2H5v12h12v-6h2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Ledgerline</h3>
+            <p class="project-desc">
+              An event-sourced ledger service for financial transactions,
+              built for correctness first. Handles idempotency, replay, and
+              audit trails out of the box.
+            </p>
+            <ul class="project-tags">
+              <li>Go</li>
+              <li>PostgreSQL</li>
+              <li>Kafka</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-top">
+              <span class="project-icon" aria-hidden="true">▹</span>
+              <div class="project-links">
+                <a href="#" class="project-icon-link" aria-label="View source on GitHub">
+                  <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.01-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.19 1.78 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.17 0 1.56-.02 2.82-.02 3.2 0 .31.21.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+                </a>
+                <a href="#" class="project-icon-link" aria-label="View live project">
+                  <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h6v2H5v12h12v-6h2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Portside</h3>
+            <p class="project-desc">
+              A lightweight internal CLI for spinning up ephemeral staging
+              environments, cutting new-environment setup time from an hour
+              to under two minutes.
+            </p>
+            <ul class="project-tags">
+              <li>TypeScript</li>
+              <li>Docker</li>
+              <li>gRPC</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-top">
+              <span class="project-icon" aria-hidden="true">▹</span>
+              <div class="project-links">
+                <a href="#" class="project-icon-link" aria-label="View source on GitHub">
+                  <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.01-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.19 1.78 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.17 0 1.56-.02 2.82-.02 3.2 0 .31.21.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+                </a>
+                <a href="#" class="project-icon-link" aria-label="View live project">
+                  <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h6v2H5v12h12v-6h2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Watchtower</h3>
+            <p class="project-desc">
+              A minimal, self-hosted uptime and latency monitor with
+              configurable alert routing — built because every existing
+              option was either bloated or paywalled.
+            </p>
+            <ul class="project-tags">
+              <li>Go</li>
+              <li>SQLite</li>
+              <li>htmx</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-top">
+              <span class="project-icon" aria-hidden="true">▹</span>
+              <div class="project-links">
+                <a href="#" class="project-icon-link" aria-label="View source on GitHub">
+                  <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.01-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.19 1.78 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.17 0 1.56-.02 2.82-.02 3.2 0 .31.21.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+                </a>
+                <a href="#" class="project-icon-link" aria-label="View live project">
+                  <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h6v2H5v12h12v-6h2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Seam</h3>
+            <p class="project-desc">
+              A schema-diffing tool for Postgres migrations that flags
+              breaking changes before they hit CI, with plain-English
+              explanations of what will break and why.
+            </p>
+            <ul class="project-tags">
+              <li>Rust</li>
+              <li>Postgres</li>
+              <li>WASM</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <h2 class="section-title"><span class="section-index">03.</span> Contact</h2>
+
+        <div class="contact-wrap">
+          <p class="contact-eyebrow">// currently open to new opportunities</p>
+          <h3 class="contact-heading">Let's build something reliable together.</h3>
+          <p class="contact-copy">
+            The fastest way to reach me is email — I check it far more
+            often than I'd like to admit. Feel free to reach out about
+            roles, collaborations, or just to talk systems design.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:supriyo.ain.02@gmail.com" class="contact-link">
+              <span class="contact-link-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm18.55 2H3.45l8.55 6.84L20.55 6ZM3 7.24V18h18V7.24l-9 7.2-9-7.2Z"/></svg>
+              </span>
+              <span class="contact-link-text">
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">supriyo.ain.02@gmail.com</span>
+              </span>
+            </a>
+
+            <a href="https://www.kaggle.com/supriyoain" class="contact-link" target="_blank" rel="noopener noreferrer">
+              <span class="contact-link-icon" aria-hidden="true">
+                <svg viewBox="0 0 128 128" width="22" height="22"><path fill="currentColor" d="M100.402 127.243c-.126.501-.627.752-1.502.752H82.168c-1.007 0-1.876-.438-2.632-1.317L51.91 91.531l-7.706 7.33v27.258c0 1.255-.628 1.881-1.88 1.881h-12.97c-1.254 0-1.88-.626-1.88-1.88V1.876c0-1.25.625-1.877 1.88-1.877h12.97c1.253 0 1.882.628 1.882 1.876v76.501l33.08-33.457c.878-.875 1.755-1.315 2.631-1.315h17.295c.75 0 1.25.315 1.504.937.252.753.19 1.316-.19 1.693L63.561 80.062l36.465 45.3c.499.502.625 1.128.38 1.881"/></svg>
+              </span>
+              <span class="contact-link-text">
+                <span class="contact-link-label">Kaggle</span>
+                <span class="contact-link-value">kaggle.com/supriyoain</span>
+              </span>
+            </a>
+
+            <a href="https://github.com/4insu" class="contact-link" target="_blank" rel="noopener noreferrer">
+              <span class="contact-link-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.01-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.19 1.78 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.17 0 1.56-.02 2.82-.02 3.2 0 .31.21.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+              </span>
+              <span class="contact-link-text">
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">github.com/4insu</span>
+              </span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/ainsupriyo/" class="contact-link" target="_blank" rel="noopener noreferrer">
+              <span class="contact-link-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.26 2.37 4.26 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+              </span>
+              <span class="contact-link-text">
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">linkedin.com/in/ainsupriyo</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-text">© <span id="year">2026</span> Supriyo Ain. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
