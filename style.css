@@ -1,9 +1,3 @@
-* {
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
 /* ==========================================================================
    TOKENS
    ========================================================================== */
@@ -163,6 +157,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .logo {
@@ -178,6 +173,38 @@ button {
 
 .logo-bracket {
   color: var(--accent-red);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.blog-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 9px 18px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-gold);
+  border: 1px solid var(--accent-gold);
+  border-radius: 6px;
+  white-space: nowrap;
+  transition: transform var(--transition-fast), background-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.blog-btn svg {
+  flex-shrink: 0;
+}
+
+.blog-btn:hover {
+  transform: scale(1.03);
+  background-color: var(--accent-gold);
+  color: #16171c;
 }
 
 .nav-list {
@@ -636,6 +663,15 @@ button {
 }
 
 @media (max-width: 720px) {
+  .header-right {
+    gap: 14px;
+  }
+
+  .blog-btn {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+
   .hamburger {
     display: flex;
   }
